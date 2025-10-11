@@ -1,118 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 
-/* ===== Global Styles ===== */
+/* ===== Global ===== */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #00093c;  /* Deep midnight blue */
+    color: #e6e6e6;             /* Soft off-white text */
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #0a1f44, #163172);
-    color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    line-height: 1.6;
 }
 
-/* ===== Header Section ===== */
+/* ===== Header ===== */
 header {
+    background-color: #000000;  /* Solid black bar */
+    color: white;
     text-align: center;
-    padding: 3rem 1rem;
-    background: linear-gradient(135deg, #0a1f44, #1e3c72);
-    color: #ffffff;
-    border-bottom: 3px solid #ffd700;
-    box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
-    width: 100%;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #222;
 }
 
 header h1 {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 600;
     margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 header h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #ffd700;
-    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #a8a8a8;
+    margin: 0.5rem 0;
 }
 
 header p {
-    font-size: 1rem;
-    color: #dcdcdc;
-    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #bcbcbc;
+    margin: 0.2rem 0;
 }
 
-/* ===== Section Boxes ===== */
-.about, .links {
+/* ===== Section Layout ===== */
+section {
     max-width: 850px;
-    width: 90%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    border-radius: 16px;
-    padding: 2rem;
-    margin: 2rem 0;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-}
-
-.about:hover, .links:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 35px rgba(255, 215, 0, 0.3);
+    margin: 2rem auto;
+    padding: 0 1.5rem;
 }
 
 /* ===== Headings ===== */
 h2 {
-    color: #ffd700;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-bottom: 1px solid #222;
+    padding-bottom: 0.3rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #ffd700;
-    display: inline-block;
-    padding-bottom: 4px;
 }
 
 /* ===== Paragraphs ===== */
 p {
-    color: #f0f0f0;
-    line-height: 1.8;
-    font-size: 1.05rem;
+    color: #d6d6d6;
+    font-size: 1rem;
 }
 
-/* ===== Links Section ===== */
+/* ===== Links ===== */
 ul {
     list-style: none;
     padding: 0;
-    text-align: center;
 }
 
 ul li {
-    margin: 15px 0;
+    margin: 12px 0;
 }
 
 ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #b0c7ff; /* Soft cool blue links */
     font-weight: 600;
-    font-size: 1.2rem;
-    background: linear-gradient(90deg, #1e3c72, #2a5298);
-    padding: 10px 20px;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
 }
 
 ul li a:hover {
-    background: linear-gradient(90deg, #ffd700, #f4c430);
-    color: #0a1f44;
-    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+    border-bottom: 1px solid #b0c7ff;
+    color: #ffffff;
 }
 
-/* ===== Footer ===== */
+/* ===== Footer (optional if you want to add later) ===== */
 footer {
     text-align: center;
-    padding: 1rem;
-    color: #ffd700;
+    color: #8c8c8c;
     font-size: 0.9rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid #222;
 }
+
 
