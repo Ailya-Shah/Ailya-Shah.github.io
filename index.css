@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+/* ===== Global ===== */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #00093c;  /* Deep midnight blue */
+    color: #e6e6e6;             /* Soft off-white text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #000000;  /* Solid black bar */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #222;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #a8a8a8;
+    margin: 0.5rem 0;
+}
+
+header p {
+    font-size: 0.95rem;
+    color: #bcbcbc;
+    margin: 0.2rem 0;
+}
+
+/* ===== Section Layout ===== */
+section {
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ===== Headings ===== */
+h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-bottom: 1px solid #222;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    color: #d6d6d6;
+    font-size: 1rem;
+}
+
+/* ===== Links ===== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 12px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #b0c7ff; /* Soft cool blue links */
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+ul li a:hover {
+    border-bottom: 1px solid #b0c7ff;
+    color: #ffffff;
+}
+
+/* ===== Footer (optional if you want to add later) ===== */
+footer {
+    text-align: center;
+    color: #8c8c8c;
+    font-size: 0.9rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid #222;
+}
+
+

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ailya Shah — Data Science Portfolio</title>
+<meta name="description" content="Ailya Shah — Data Science undergraduate at NUST SEECS. End-to-end machine learning, remote sensing, and honest, deployable data work." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+@font-face {
+  font-family: 'DSEG7 Classic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(data:font/woff2;base64,d09GMgABAAAAABREAA4AAAAAWugAABPpAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGhwGYACCcggEEQgKumCmLAuBEgABNgIkA4E2BCAF8AcHgTIbKk+joqSzqWAkQtg4ACLaycV/TNAkroVr80AlJkpPmR5EiaJzKWtiLkKldZvoaeZF/flrCw7h2R0Llj8uHOYYDY28mD78uv/Oxcw8UvEnLpTIthFsYCjrUNeNCuX/vJBBdjm39+9AqkRuLnElVgLaFGVKSDVYPw8fY+79P7Ek2oZrmmTE8m6VkllKHJ2SyJCpNI6SgIzdfl8JBhQgRRxEXpBQl7AwC/2woaIkHXCPC2AqEdr9a1C48v4v3etHvU21w/3MjCCf77h62MgxEwIO4LxL9UaGxegMEicJ+1y3Fyn+1/J7xbNPlcIrASLZHodMXYZKBJkAs7en+9670v33j36IU+PnkEc5dPdMv7yrkHe/Q94yMo5MISHHjERNgGXmMjVKxQ1YyMzUm0wt2/1/6OLAMYoRRjF649CxstoNzTbn1+t17ftK0nYxizFCDGJwhRiMCTx9bWp6jRlms4TXW/tnJZC0v0QACABv3oMC4LnVo3kAPg6/eYAAAEDFhAMogAAIgBfczHklsjyZC5yOvQD5cRIUoIQCEEj4NQHA3HNQPrYwcjcfWI4OAbKB0ImBz1hEXd0hsEOJ+GlycwAdHQbwy2hYRjXYpMAnLaeP4sSvn8M1V5xwwD4TwuWYlDEWNmwHKt0uYEX03y+UId1inqdTxs0MbZPZYn0s9Se9PxAMhSPRWDyRBICU9GE2ly8US+VKtVZvNFvtTrfn5x8QGBSMy//hqcu7+vMogPzDwWD21OeFDAHpD/nYK3YDGZSjuxMiSiC8qazmJHkhGlMiUhDfG7ChgA44NDxw4rob/LKV64SSKM6VRPloCInJhY9COIEh+gctGomjLiAq13Ia/p8fOhBlxDlhHGVOyj1yqclBTkJRH+Dqv0jMFaM/o0pBzecbfMX+MaNCZwb198vk6Gr3+vh008zERs/aWEqs0hxH0jsSlowj6Xvy8Vi5gr6UxuJZukMUlni2flsukSBfqSDdPQ0TsYG5ebigEbDsCXkPzXsFDkiQ5elompYNT0MmfEVqZTqr/MLn96unMt+vOXE17FEfW36jyi5MN+2VuRLaW5Rm6ULVXfT+xdnkImV3mm7XdU8FVTf+N8FiClYCuGKJdmykRynJ2Al74urzCt2fQHoWySvJ5P+672R53Ma5T36CraDZyY3JXJ5aS6P/RFYzVqY3ND+o8bR4/ho9Sd36+k8h/sHkSmtCRqteNhH7zrAcH/O6jp+92hccda9/PHhlj3+cfjyMPq4FOJe4r21IdYOAfW/G1iu3wfsdSjYMO3w8YfKBJpMI29UKz1Ku8mnq4NKUHsrXSDjBiHQ6Y1HGVuZrrW42MlAzpmySkx152w57CRHhtZOjLQYtq5218zbGnjY1cupK12SLF/aZ8YySHKU7ueNBjog6h4MMipRxdvoMv5XEzKmUCi3ho7BSb4NknO6e8c1oInWtZ7nG6slXd5kpM/wxg1Kf2TO/9MXNwnmG/sNcSXdJN6HJ6wlDE0Xm5Ad6skl34LXH/sl09qSa3vd2Mrp8unuh7Pi+sGDV/p6gfk44jfVo7Fqu8UdpjjbyR6KM8rkJAAc/ctivUTz/NScznp96g/+FfvVaGQqBYS7ohi1kJEbd9NzJr8UYOxgDQO4AT4EdR978vPyfY8upZA9ip+N8Z/c9trHZjYO3Lcvkbf2g7lPnYQAzdiSYc4zRU/dYAwDAFhGbm55mSUmofSspyd+SycfWkjPHk1Kgiu+lyJSZUi6QJ0oVa34u1U2L8KDUcFzeeGEj1eU5CkhRDuCYSErC4UFJaayWzObgl1wirpQCW3wpRbHkpdwoA0qVTN4s1auR5K/UKF1ufbGNbJds/N+aQQSHtNDBFXpHrJ50IijgQnJ6aENTXOwHN44Iuhe5hRZ6jjNZunGj0zil+9UiVieiECfgrSF7+3eyvTwJBUsfX2ijldtocyS8j25xsUR3o1Od7rpfYGS7SJELPC9R4d68QGsDwbKkhpfkby/vn3ZHzyuRoxnYGN5nKKzuTdmJLqGZBSGy13oOd56EHoTu3UYWeDbdf4n0LKSzrvzw3VP4EC5U3CrP9HIP8wfxvC/EsCRNQbcij555K4h8/G30+Jxf/ig5SFeZZqEW6khcs/TDCfjNKtpI+uXVq4mhBTwPsMWnhRxf/jjJqRFcX9Sv19fJ6MDzML1cbRM5FUJ65vkNFvnZKUD397fnrWmTK0M66jlooRFA927decUgPqATJPL4AKtBWoKvIsa51nEFfF2UE8bKd8sdfREAagPzVuuFK1rHuRAMgjAdHHgVUayhdqa0phXJoPdSK6kMKkyICucznIIlq1NxhwjTSxsXStowXsnbmBuSgXbBVkGO4TcUBpaOv+aZIA1f+GBAkEkVhOvYZ//zOUvgmtpqHPxCE8eKWNIgmsXveKOwkYGr/76wMwtOePkOl7+8kKvr1Fp1YhUe1CjsKtTqc4cnJgfGTDCuNP+/3nrx+cJgp8TFPqxk+P1NCTrSoSseRGc+lQ1axDgO4AQMHX1Ty5HG3DLHD5xfD1qS2haBr3Ymsp6MA8wZ8uTawCAQVPSGVoW1ZvgfrP0HaWibZVba2WTqYM5h4r5qqtcH2wLSNRUmQNMKDWFZRxA0OTRzqhLapHdrHnSEMFTkLonYg2yyAztD8ZOlnbGKLjRAB+IbfEZ5pPUJmgDH2huoepfexVUj4Tr3VyGrj2umNYSuHAVxZ50uNI6iH2bmpzRV/cO3BDnZEOQDIxvyprIxdCakGCdAfNjcZoyta2Yt+fd6pF+suwk4cuqDuaUhHcyCxZh1wGMiO1WHSX8lu7NXvgul7nWsDaLG7Tqa1QEjGDF8mQV/xvA2jcENj1XVzxcE/DzkneOmLtpcYUR2KJZqwAI6AIxb7UkGEo9Nb0ZFHiVqMbnA1l2aYmuRwIbg6iJTuA1QJC+2iCV0us8DE+I+B4m37i4OZw16Nn0KzRjA3g5h9h6KYZmocnEaTsNdkXM1oQRJEi+mKZr2XzP5UzKQUqhrMqjZxJTGUtFPApqWBs7+VGQj6oBB94DD3VpjNiQ5KQgqS+8SB5/s+3NY1x0DZ8bvUAluI5VL1VKFXAX4kmU+DO26CyCx9FiLimTYkTsSG2g8x8tQShuwnYqvFmIsWAF84dCawWZSR8e/VKcZNFtXuAUnRu5L3s9BcpDPt6/NjAYZywWTcxxLGNvqilpKkKLZpC/J/cIQouJZH1qTNXnd6R9SuDpS5J1AsyaYtS1zQ+GwAyuugLtCpOQthyJRD5AWOMRUTzal+IcTPUtptKMFCZxP4YWguF30UYD593mVY6PskEHIwroqHY2BJ3PnQwbMhGoHHRo7c5uikib1glNDRMZ5rugKGxZB7Yk7btwcsFAxn/BBFQfZpRQGH5JsfEWUMk7CDD4EvsJ9fYHWLziTTKVo5ng1hqf9uOwoCzs+UmVWkSejE65rO0pkNZ7e0SGNnjpqYZA8Na8AEoK45mwyNKOjo2gWKtLJdC4sQoDnYnctfUhVqlqo0Z8zAsmipC50Z+iakWQDpnWWTBvF5wGYMjfHdBt0hIfCbEMY7rT3q7QDV8eeiDEQyzaRm+texrEAxbr7mCvWmbTXyKYoX4cSQ6Ov+p3CDNV1xUGoqfTSLeFeYTXr+UKAk4LXtjQnRUeLA+ElwkBCcvlbspYAuBNAOSJxmj+bhVpsksbk5Jsc6gXX5iTpzB9jNb0Ek4fGZOU1kOJ1LblqeHMUmHXz8jG7FwyeEKdssNfq8Ze5ZGyGvTZECATPiQEvPJ/h4km7BF91ablgRSaRY+sieX1lHrJ4OYu0TazHlIoAmRvWhMQaapTM2//HCV7R6/hooZrPtvs56//uoy7QjJ0IhE1YEVUJk0JGSMXROQKBuRPEvEGlQCv76vuID7Gih1fejIm3/iu4abzxsBi2odCb1Gs9ty+5CJYkrJkJGjx8hDk9LxN+kZFysa9UnwLhikGIIMCmTQSqHE0VDUFC1bMGpfiSYGQWzCzpNuUsFVqekMbriu9ECZBQZ1MB8eK5g0TiTUzOjJwQIlklWKcBJ6ArKM2QuM2+Dh6tbplTyCngSWp4atWdR2mTtvxSlM0cFXGwgRA/6Z3heKSrfEC1Zl7ZXCO0u43Gkec+aTcHzBsjb3eDTBXdCo2TSbuk//yR87QCUtdOKFvgOYDNWZx3mzeVIhuI3Bm6UCB6TnnKkri0QLG17mNr2CrUMmBkQcjoVbU0FWPJbDezdxUz7FXGxSx2LrDZ27C+pbm1uP261OEtL0m8EMhdaE6px7l4den3i53HTqLJ9m3OB46qPdPkzxOTujVZhKdboGX7eg7wJc+7ud98qrKWiaU+cCVQ2+K/kl1WxYtN+1OsvEH7G0c7pcKXVIJLIF+salKfPf25zBVb3RMheqS6FBs47xsqSjHSdy41qRkN9/eSLTxTLLAoQbfdyaSGlcmHuXW9l0iueoNWRse5Ykkf3GQ13XGtMJ2kBnyr6Bmw06xtIW1sJUWFFUMGIalysrYRwxgCH8jt2l4mg6rY33SnUOFkLKGsuSXNRmmRchowr0DLP0+ud75hN32zVWPmrIZDqrVVmqDA9PgdY9IKV0MSYFnEqCdzS8R94Z4AFq7KZBBhGfQV3d1kEgPNCneAxUsmhSPpiRc6knUiJg3rl1VdwYwdsRQ8QcwAUXOMIlZm0y13uLVU7n2vTpXKmdq7yMe9+6uMSZ5bASc2n/Ywj7oAbKHaACuoJ2xbHK3Wtx3e98gEOZJJaW1+Wc2N/qx3Aw6HQ+a5UPAnKzimukiGuL7b3hergl7MMpkXcN7thCAKgXlw4zDBLaNpleFs9MdEvE0ctL8J2gLBK508FFysiXIwYGs68Tul4R3k3Pd0wao25v92LAelVXITz/ndNILXmR+v0uwTl90k9G4L9B0wr7iLrnyWtPvYpL2d2rbzoBGqfUdMabXJEwjcxJ8o3BKmiBoZWFs5vDr+ncUmg8tLKVSw4viO51vRgrZyTzS4BkO8f34YoAuKYXrHfQ7YlTz+WGUc6p7QOgFyNJ2b18dFsckCLIOndBqtk+M8CEeY7iL4CX2HY73Lz36BsK3dBFJMm7CnYRR0ANvxCYiO0CkvXoJwj/HLe6zaDzotYsnfUSA46X0sel/nw/7hsAZC7sDXVK8MQFoG7y02GTov4jrpD484UVDQpJTATkQRv/saAkYwVWiBskNEMmGUY6H6z3vqnuCYSXz144W6ooNFdyESSTcFo9Fx1Q7RuR6NB2rb2ejLR+/dN9rgRdXgoKxnwr5TYw32b8yxCBxpgn5T8fFRHyCOGG40tgzcbQrqRLgDNXTBvgnPPGnwWRL6qynl4UELEYtQBASCcF6j7Xf6RAxIEeAgjDcd+IA26lthMh4bAYy9+f7gi9a8T8cQ6OJgG77kNDyKmB6A7TVwejAbpADZSDioBApM/2LO947iCvXDX5KSO65zhUteUsV2rnYA8EVZUkJ55QpeSHGOwgxa+6xAF0emyWm/DU7BGiYscOFXIoCrOEMDgmssLNThrlw8BXFiVvF8K8nGQzSmJ86OOc0gxwZySbsYaINTEHEoDLV892vz4lRMsBSHJkkNok6LF0JGXMbyZTaNYM792ixFZ8n1MM4Sl4KPB0UXnXEkmZ0dJRLKzuHZSTzjNlggAdpRcJRL0G8Kz54ggV3oTxyzx0QAk6U68+dfHzMDiOp+aSn19ZD8zYa9FO8VNkWdIuABnN1SHUGoDMbP2BYSpGwEJ3AlH05hE3V+1BmPVHEHuMbA8MdSPcZZzRWYR45+CgQ0fQKQDKZ+5H0Ad9x3R4G+Q2lTb+4jnZOLoApdw0AqfNtWG6zaRywzbWQ4/Lg0PwOA+927s5UOKQZkYr3GIvYMKAve/UXAmoO3AsHwXnix6InQH7LUo+0FJTB/+92cSpGG4BjwHZI8h/y3oSHRntN5OgkN7LEg1QhdycpvsJVzpgzAx2PCnopyx8Gejh+kGo65IyaMeKMt7Ugx91C0nyT5IDjKL95EAA+Y66Lp90QcdizWawCjQUBa4Ok0KRgHVzGB2h/HJ7aEmpRSMi0pu5mADWnkUKEGH8ylMxToqiXYGk46+s0Dj8MCU5GnNCcj4NYYGC9utEO6NSreyAsakxV5uH59Uq02lg4oNBPq7ULI/IMMR410RDQK7l2WIoLYLIOYU0WOPkllkIYQyUI6BWCI9SmHUiIXSNR9tXlaygzRIQbal1HDZVKr68xC2TO2pYwM+9j0QCxunSvhAOwSgYuCA+jua9Zq/8dkxd/tCGCHc1XoGR6RnVkW6RGJdgPYNdg/khkNUI2Rfy/UW/6sjNv1Hm6Rm2N+XEkP+2y7Ba3DrihjnVO/8cMY5994MDQY7Hdsh4ryRFKWZubT/lEeNMceGXCGx1Jeib3Q1Ho6oktpV4C55utHraKnA6j8OeI8wbzI03xTpvlbi/Q3IJCDFWH/Lt699K7F89ia8etd1xx6t9+CtGmOebGNg9x2slmHVICErSO0rvPhFccsbQ89CuVscCzuYXtffVWhIzXZUQEPmIyOxmLayVvgyW9rLsfYh9OE57Vqf1E+snhXxT/3yetgg5yM7VH2IH4wzve7ejiDtyj9J9RFWe/PC7Slzi6HHTkf/Pq7x/cVD6MG9ztFuloACgwFbOyEo/PT/K3CDo1Hfskar9RYEXMe5K1Lz8talU9eQUNR6a1Kv6XWLr58oVEsARQA4D+nLvfOPp7yRcLp6BmZmFlY2dg5OLm4hYRFRMXEJSSlpGVk5fLH6Bspq6iqqWtoamkbrGw6DBF6x3ARIkWJfqnyu4kTL0GiJMlSpEqTLkOmLC0AAA==) format('woff2');
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #06122B;
+  --bg-deep: #020817;
+  --panel: #0B1738;
+  --panel-2: #10224A;
+  --ink: #eef2ff;
+  --body: #c6cdec;
+  --mid: #a3adda;
+  --muted: #7b86bb;
+  --line: rgba(176,199,255,0.14);
+  --line-2: rgba(176,199,255,0.30);
+  --accent: #b0c7ff;
+
+  --physics: #74e0ff;
+  --psyche:  #c3a4ff;
+  --python:  #f4c56a;
+  --air:  #83e3b6;
+  --rose: #f3a7c0;
+
+  --shadow: 0 2px 6px rgba(0,0,0,.35), 0 18px 50px rgba(0,0,0,.35);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--body);
+  font-size: 16px; line-height: 1.72;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: var(--accent); text-decoration: none; transition: color .15s; }
+a:hover { color: #fff; }
+.lbl { font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.18em; }
+:focus-visible { outline: 2px solid var(--physics); outline-offset: 3px; border-radius: 3px; }
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.75rem; }
+
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(0,9,60,0.72);
+  backdrop-filter: saturate(160%) blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-in { max-width: 1080px; margin: 0 auto; padding: 0 1.75rem; height: 60px;
+  display: flex; align-items: center; justify-content: space-between; }
+.nav-name { font-family: 'Space Grotesk', serif; font-style: italic; font-size: 1.15rem; font-weight: 500; color: var(--ink); }
+.triad-dots { display: inline-flex; gap: 4px; margin-left: 8px; vertical-align: middle; }
+.triad-dots i { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
+.d1 { background: var(--physics); } .d2 { background: var(--psyche); } .d3 { background: var(--python); }
+.nav-links { display: flex; gap: 1.5rem; list-style: none; }
+.nav-links a { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mid); }
+.nav-links a:hover { color: var(--accent); }
+@media (max-width: 600px) { .nav-links .hide-sm { display: none; } .nav-links { gap: 1rem; } }
+
+.hero { position: relative; overflow: hidden; }
+.hero::before {
+  content: ""; position: absolute; top: -20%; right: -10%;
+  width: 720px; height: 720px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(116,224,255,0.10), rgba(195,164,255,0.06) 40%, transparent 68%);
+  pointer-events: none; z-index: 0;
+}
+.hero-in {
+  position: relative; z-index: 1;
+  max-width: 1080px; margin: 0 auto; padding: 4.5rem 1.75rem 3.5rem;
+  display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2rem; align-items: center;
+}
+@media (max-width: 860px) { .hero-in { grid-template-columns: 1fr; gap: 2.5rem; } .orbit-wrap { order: -1; } }
+
+.hero-eyebrow { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1.4rem; flex-wrap: wrap; }
+.hero-eyebrow .lens { display: inline-flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: var(--mid); text-transform: uppercase; }
+.hero-eyebrow .lens b { width: 7px; height: 7px; border-radius: 50%; }
+
+.hero h1 {
+  font-family: 'Space Grotesk', serif; font-optical-sizing: auto;
+  font-size: clamp(3.1rem, 8vw, 5.2rem); font-weight: 500; line-height: 0.98;
+  letter-spacing: -0.02em; color: var(--ink); margin-bottom: 0.7rem;
+}
+.hero .role {
+  font-family: 'Space Grotesk', serif; font-style: italic; font-weight: 400;
+  font-size: clamp(1.1rem, 2.6vw, 1.45rem); color: var(--accent); margin-bottom: 1.5rem;
+}
+.hero-lede { font-size: 1.06rem; color: var(--mid); max-width: 540px; margin-bottom: 1.9rem; }
+.hero-lede em { font-style: italic; font-family: 'Space Grotesk', serif; color: var(--ink); }
+
+.meta-row { display: flex; flex-wrap: wrap; gap: 1.6rem; margin-bottom: 1.8rem; }
+.meta-item { flex-shrink: 0; }
+.meta-item .mv {
+    font-family: 'DSEG7 Classic', monospace;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--ink);
+    line-height: 1;
+    white-space: nowrap;
+    text-shadow:
+        0 0 4px rgba(120,220,255,.18),
+        0 0 10px rgba(120,220,255,.08);
+}
+.meta-item .ml { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 6px; }
+.mv.lead-one { position: relative; left: -0.55em; }
+
+.hero-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.hero-link {
+  font-family: 'JetBrains Mono', monospace; font-size: 11.5px; letter-spacing: 0.03em;
+  padding: 0.42rem 0.85rem; border: 1px solid var(--line); border-radius: 7px;
+  color: var(--mid); transition: border-color .15s, color .15s, transform .15s;
+}
+.hero-link:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+
+.orbit-wrap { display: flex; justify-content: center; }
+.orbit { width: 100%; max-width: 380px; height: auto; }
+.orbit circle.ring { fill: none; stroke-width: 1; }
+.planet-g { transform-box: view-box; transform-origin: 210px 210px; }
+.spin-1 { animation: spin 22s linear infinite; }
+.spin-2 { animation: spin 36s linear infinite reverse; }
+.spin-3 { animation: spin 54s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.planet { filter: drop-shadow(0 0 6px currentColor); }
+.core-halo { animation: breathe 6s ease-in-out infinite; transform-box: view-box; transform-origin: 210px 210px; }
+@keyframes breathe { 0%,100% { opacity: 0.5; } 50% { opacity: 0.9; } }
+
+.manifesto { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,0.012); }
+.manifesto-in { max-width: 1080px; margin: 0 auto; padding: 3rem 1.75rem; }
+.manifesto p {
+  font-family: 'Space Grotesk', serif; font-style: italic; font-weight: 400;
+  font-size: clamp(1.35rem, 3.2vw, 2rem); line-height: 1.35; color: var(--ink); max-width: 860px;
+}
+.manifesto p .hl { font-style: normal; background: linear-gradient(transparent 62%, rgba(244,197,106,0.28) 0); padding: 0 2px; }
+.manifesto .sig { display: block; margin-top: 1.3rem; font-family: 'JetBrains Mono', monospace; font-style: normal; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+.section { max-width: 1080px; margin: 0 auto; padding: 3.5rem 1.75rem; }
+.sec-head { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 2.2rem; }
+.sec-num { font-family: 'Space Grotesk', serif; font-style: italic; font-size: 1.1rem; color: var(--muted); }
+.sec-title { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); }
+.sec-rule { flex: 1; height: 1px; background: var(--line); align-self: center; }
+
+.plate { position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--line-2); background: #04082e; }
+.plate .cap { position: absolute; top: 10px; left: 12px; z-index: 2; font-family: 'JetBrains Mono', monospace; font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); background: rgba(0,0,0,0.35); padding: 3px 8px; border-radius: 5px; backdrop-filter: blur(4px); }
+.cap-num { font-family: 'DSEG7 Classic', monospace; letter-spacing: 1px; font-size: 11px; color: rgba(120,220,255,0.85); text-shadow: 0 0 4px rgba(120,220,255,.35); }
+.plate .fallback { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 0; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); text-align: center; background: repeating-linear-gradient(45deg, #050b34, #050b34 11px, #081048 11px, #081048 22px); }
+.plate img { position: relative; z-index: 1; width: 100%; display: block; object-fit: cover; object-position: top; background: #04082e; }
+
+.featured { --tint: var(--python); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: stretch; }
+@media (max-width: 860px) { .featured { grid-template-columns: 1fr; } }
+.feat-body { display: flex; flex-direction: column; }
+.feat-flag { align-self: flex-start; display: inline-flex; align-items: center; gap: 7px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--tint); border: 1px solid color-mix(in srgb, var(--tint) 34%, transparent); background: color-mix(in srgb, var(--tint) 8%, transparent); border-radius: 999px; padding: 4px 11px; margin-bottom: 1.2rem; }
+.feat-flag .pulse { width: 6px; height: 6px; border-radius: 50%; background: var(--tint); animation: pulse 2s infinite; }
+@keyframes pulse { 0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--tint) 55%,transparent);} 70%{box-shadow:0 0 0 7px transparent;} 100%{box-shadow:0 0 0 0 transparent;} }
+.feat-body h2 { font-family: 'Space Grotesk', serif; font-weight: 600; font-size: clamp(2rem, 4.5vw, 2.7rem); line-height: 1.02; letter-spacing: -0.015em; color: var(--ink); margin-bottom: 0.8rem; }
+.feat-body > p { color: var(--mid); font-size: 0.98rem; margin-bottom: 1.6rem; }
+.bignum { display: flex; align-items: flex-start; gap: 1rem; margin: 0.4rem 0 1.7rem; }
+.bignum .n {
+    font-family: 'DSEG7 Classic', monospace;
+    font-weight: 400;
+    font-size: clamp(3.3rem, 7vw, 4.7rem);
+    letter-spacing: 3px;
+    line-height: .85;
+    color: var(--tint);
+    text-shadow:
+        0 0 6px rgba(120,220,255,.18),
+        0 0 12px rgba(120,220,255,.08);
+}
+.bignum .n-cap b { color: var(--body); font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+.chip { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; padding: 3px 9px; border-radius: 6px; color: var(--tint); background: color-mix(in srgb, var(--tint) 8%, transparent); border: 1px solid color-mix(in srgb, var(--tint) 24%, transparent); }
+.feat-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: auto; }
+.btn { display: inline-flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; padding: 0.5rem 0.95rem; border-radius: 8px; transition: transform .15s, opacity .15s, border-color .15s, color .15s; }
+.btn-solid { background: var(--tint); color: #221900; font-weight: 700; }
+.btn-solid:hover { opacity: 0.9; color: #221900; transform: translateY(-1px); }
+.btn-ghost { border: 1px solid var(--line-2); color: var(--mid); }
+.btn-ghost:hover { border-color: var(--tint); color: var(--tint); transform: translateY(-1px); }
+.featured .plate img { height: 100%; min-height: 340px; }
+
+.index-list { display: flex; flex-direction: column; gap: 1.75rem; }
+.entry { --tint: var(--accent); display: grid; grid-template-columns: 300px 1fr; gap: 1.6rem; align-items: center; padding-bottom: 1.75rem; border-bottom: 1px solid var(--line); }
+.entry:last-child { border-bottom: none; }
+@media (max-width: 760px) { .entry { grid-template-columns: 1fr; gap: 1rem; } }
+.entry .plate img { height: 190px; }
+.entry-head { display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 0.5rem; }
+.entry-num { font-family: 'Space Grotesk', serif; font-style: italic; font-size: 1.05rem; color: var(--tint); }
+.entry-title { font-family: 'Space Grotesk', serif; font-weight: 600; font-size: 1.5rem; line-height: 1.05; color: var(--ink); }
+.entry-desc { font-size: 0.94rem; color: var(--mid); margin-bottom: 0.85rem; }
+.entry-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.85rem; }
+.entry-links { display: flex; gap: 1rem; }
+.entry-link { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.04em; color: var(--muted); }
+.entry-link:hover { color: var(--tint); }
+.tint-psyche { --tint: var(--psyche); } .tint-physics { --tint: var(--physics); }
+.tint-air { --tint: var(--air); } .tint-rose { --tint: var(--rose); }
+
+.focus-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; max-width: 880px; }
+@media (max-width: 760px) { .focus-grid { grid-template-columns: 1fr; } }
+.focus-card { --tint: var(--accent); padding: 1.7rem 1.6rem; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); border-top: 2px solid var(--tint); }
+.focus-card.fc-ml { --tint: var(--physics); } .focus-card.fc-rs { --tint: var(--air); }
+.focus-name { font-family: 'Space Grotesk', serif; font-weight: 600; font-size: 1.35rem; color: var(--ink); margin-bottom: 0.6rem; }
+.focus-card p { font-size: 0.94rem; color: var(--mid); margin-bottom: 1rem; }
+
+.skills-panel {
+  background: linear-gradient(180deg, rgba(255,255,255,0.018), rgba(255,255,255,0.008));
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.6rem 1.7rem 1.7rem;
+}
+.skills-panel .skills-note {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.1rem;
+}
+.skills-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 900px) { .skills-grid { grid-template-columns: 1fr; } }
+.skill-card {
+  --tint: var(--accent);
+  --soft: color-mix(in srgb, var(--tint) 10%, transparent);
+  --line-soft: color-mix(in srgb, var(--tint) 28%, transparent);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--tint);
+  border-radius: 14px;
+  padding: 1.25rem 1.15rem 1.1rem;
+}
+.skill-card.fluent { --tint: var(--physics); }
+.skill-card.working { --tint: var(--python); }
+.skill-card.exploring { --tint: var(--psyche); }
+.skill-tier {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.55rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tint);
+}
+.skill-tier b {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--tint);
+  box-shadow: 0 0 0 4px var(--soft);
+}
+.skill-card p {
+  font-size: 0.92rem;
+  color: var(--mid);
+  margin-bottom: 1rem;
+}
+.skill-chips { display: flex; flex-wrap: wrap; gap: 0.42rem; margin-bottom: 0.95rem; }
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.2px;
+  color: var(--body);
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-soft);
+  background: var(--soft);
+}
+.skill-chip i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--tint);
+  flex: 0 0 auto;
+}
+.skill-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: auto;
+}
+.proof-label {
+  width: 100%;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.15rem;
+}
+.proof-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.8px;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  color: var(--tint);
+  background: color-mix(in srgb, var(--tint) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tint) 28%, transparent);
+}
+
+.earlier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+@media (max-width: 640px) { .earlier-grid { grid-template-columns: 1fr; } }
+.earlier { display: block; padding: 0.95rem 1.2rem; border: 1px solid var(--line); border-radius: 11px; transition: border-color .15s, transform .15s; }
+.earlier:hover { border-color: var(--line-2); transform: translateY(-2px); }
+.earlier .et { font-size: 0.92rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+.earlier .et .ar { font-family: 'JetBrains Mono', monospace; color: var(--muted); font-weight: 400; }
+.earlier:hover .et { color: #fff; }
+.earlier .ed { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+/* ===== BADGES / CERTIFICATIONS ===== */
+.badge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+.badge-card {
+  --tint: var(--python);
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1.1rem 1.3rem;
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--tint);
+  border-radius: 14px;
+  background: var(--panel);
+  transition: border-color .15s, transform .15s;
+}
+.badge-card:hover { border-color: var(--line-2); transform: translateY(-2px); }
+.badge-icon {
+  width: 38px; height: 38px; flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--tint) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tint) 30%, transparent);
+  color: var(--tint);
+  font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 700;
+}
+.badge-body { flex: 1; min-width: 0; }
+.badge-name { font-family: 'Space Grotesk', serif; font-weight: 600; font-size: 1.02rem; color: var(--ink); margin-bottom: 2px; }
+.badge-desc { font-size: 0.85rem; color: var(--muted); }
+.badge-arrow { font-family: 'JetBrains Mono', monospace; color: var(--muted); font-size: 0.95rem; flex: 0 0 auto; }
+.badge-card:hover .badge-arrow { color: var(--tint); }
+.badge-more { display: flex; align-items: center; justify-content: center; padding: 1.1rem 1.3rem; border: 1px dashed var(--line-2); border-radius: 14px; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+
+.close { text-align: center; padding: 4rem 1.75rem 1rem; }
+.close .q { font-family: 'Space Grotesk', serif; font-style: italic; font-size: clamp(1.4rem, 3.5vw, 2rem); color: var(--ink); max-width: 640px; margin: 0 auto 1.6rem; line-height: 1.3; }
+
+footer { border-top: 1px solid var(--line); padding: 2.2rem 1.75rem 3rem; text-align: center; }
+.footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.3rem; margin-bottom: 0.9rem; }
+.footer-links a { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; letter-spacing: 0.04em; color: var(--mid); }
+.footer-links a:hover { color: var(--accent); }
+.footer-note { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.06em; color: var(--muted); }
+
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .spin-1, .spin-2, .spin-3, .core-halo, .pulse { animation: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <span class="nav-name"></span>
+    <ul class="nav-links">
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="https://github.com/Ailya-Shah" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-in">
+    <div class="hero-text">
+      <div class="hero-eyebrow">
+        <span class="lbl" style="font-size:11px; color:var(--muted);">Machine Learning · Data Systems · Remote Sensing</span>
+      </div>
+      <h1>Ailya Shah</h1>
+      <p class="role">SEECS , NUST</p>
+      <p class="hero-lede">
+I build end-to-end machine learning systems—from sourcing and engineering data to developing models and deploying interactive applications. My work spans financial forecasting, credit risk analytics, remote sensing, and experimental platforms, with an emphasis on transparent methodology, reproducible analysis, and results that can withstand scrutiny.
+      </p>
+      <div class="meta-row">
+        <div class="meta-item"><div class="mv">24-28</div><div class="ml">BS in Data Science</div></div>
+        <div class="meta-item"><div class="mv lead-one">100%</div><div class="ml">Matric</div></div>
+        <div class="meta-item"><div class="mv">91%</div><div class="ml">FSc</div></div>
+      </div>
+      <div class="hero-links">
+        <a class="hero-link" href="https://github.com/Ailya-Shah" target="_blank" rel="noopener">GitHub</a>
+        <a class="hero-link" href="https://www.linkedin.com/in/ailya-shah-52381a320" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="hero-link" href="https://www.kaggle.com/ailyazainab" target="_blank" rel="noopener">Kaggle</a>
+        <a class="hero-link" href="https://ailya-shah.github.io/3P" target="_blank" rel="noopener">3P — blog</a>
+        <a class="hero-link" href="https://substack.com/@ailyaa" target="_blank" rel="noopener">Substack</a>
+      </div>
+    </div>
+
+    </div>
+</header>
+
+<!-- FEATURED -->
+<section class="section reveal" id="featured">
+  <div class="sec-head">
+    <span class="sec-num">i.</span>
+    <span class="sec-title">Featured</span>
+    <span class="sec-rule"></span>
+  </div>
+
+  <div class="featured">
+    <div class="feat-body">
+      <span class="feat-flag"><span class="pulse"></span> Live · deployed on Vercel</span>
+      <h2>Bitcoin Trend Prediction</h2>
+      <p>
+        An end-to-end pipeline that forecasts short-term Bitcoin direction: automated ingestion
+        (Binance, on-chain, FRED), a nine-notebook analysis pipeline, classical ML benchmarked
+        head-to-head against a neural net, and a cost-aware backtest — leakage-aware throughout.
+      </p>
+      <div class="bignum">
+        <span class="n">50.7%</span>
+        <span class="n-cap"><b>best-model directional accuracy.</b> Next-day direction is close to a coin flip — so the dashboard says exactly that, instead of a number that flatters.</span>
+      </div>
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">XGBoost / LightGBM</span><span class="chip">LSTM</span>
+        <span class="chip">React + Vite</span><span class="chip">Recharts</span><span class="chip">Vercel</span>
+      </div>
+      <div class="feat-links">
+        <a class="btn btn-solid" href="https://bitcoin-trend-predictions.vercel.app/" target="_blank" rel="noopener">↗ Live dashboard</a>
+        <a class="btn btn-ghost" href="https://github.com/Ailya-Shah/Bitcoin-Trend-Prediction" target="_blank" rel="noopener">↗ GitHub</a>
+      </div>
+    </div>
+
+    <div class="plate">
+      <span class="cap">bitcoin · dashboard</span>
+      <span class="fallback">assets/bitcoin-hero.png</span>
+      <img src="assets/bitcoin-hero.png" alt="Bitcoin Trend Prediction dashboard" />
+    </div>
+  </div>
+</section>
+
+<!-- WORK INDEX -->
+<section class="section reveal" id="work">
+  <div class="sec-head">
+    <span class="sec-num">ii.</span>
+    <span class="sec-title">Selected Work</span>
+    <span class="sec-rule"></span>
+  </div>
+
+  <div class="index-list">
+
+    <!-- ExperimentLab -->
+    <article class="entry tint-psyche">
+      <div class="plate">
+        <span class="cap">experimentlab</span>
+        <span class="fallback">assets/experimentlab.png</span>
+        <img src="assets/experimentlab.png" alt="ExperimentLab dashboard" />
+      </div>
+      <div>
+        <div class="entry-head"><span class="entry-num">i</span><h3 class="entry-title">ExperimentLab</h3></div>
+        <p class="entry-desc">A full-stack A/B testing platform in C#: define experiments, deterministically assign traffic, collect events, run a two-proportion z-test, and return a plain-English ship decision. Multi-page dashboard, EF Core migrations, standalone build.</p>
+        <div class="entry-tags">
+          <span class="chip">C# / .NET 8</span><span class="chip">ASP.NET Core</span><span class="chip">EF Core</span><span class="chip">SQLite</span>
+        </div>
+        <div class="entry-links"><a class="entry-link" href="https://github.com/Ailya-Shah/ExperimentLab" target="_blank" rel="noopener">↗ GitHub</a></div>
+      </div>
+    </article>
+
+    <!-- Basel-Lite -->
+    <article class="entry tint-physics">
+      <div class="plate">
+        <span class="cap">basel-lite</span>
+        <span class="fallback">assets/basel-lite.png</span>
+        <img src="assets/basel-lite.png" alt="Basel-Lite credit risk dashboard" />
+      </div>
+      <div>
+        <div class="entry-head"><span class="entry-num">ii</span><h3 class="entry-title">Basel-Lite — Credit Risk Engine</h3></div>
+        <p class="entry-desc">A credit-risk pipeline on real Lending Club data: a Weight-of-Evidence scorecard, calibrated PD and LGD models, and portfolio Expected Loss (PD × LGD × EAD), served through a FastAPI backend with an interactive dashboard.</p>
+        <div class="entry-tags">
+          <span class="chip">Python</span><span class="chip">LightGBM</span><span class="chip">FastAPI</span><span class="chip">SHAP</span><span class="chip">MySQL</span>
+        </div>
+        <div class="entry-links"><a class="entry-link" href="https://github.com/Ailya-Shah/basel_lite" target="_blank" rel="noopener">↗ GitHub</a></div>
+      </div>
+    </article>
+
+    <!-- AirVision -->
+    <article class="entry tint-air">
+      <div class="plate">
+        <span class="cap">airvision · <span class="cap-num">2026</span></span>
+        <span class="fallback">assets/airvision.png</span>
+        <img src="assets/airvision.png" alt="AirVision air-quality dashboard" />
+      </div>
+      <div>
+        <div class="entry-head"><span class="entry-num">iii</span><h3 class="entry-title">AirVision — 2026</h3></div>
+        <p class="entry-desc">A satellite-based air-quality study of 15 Pakistani cities, built on Google Earth Engine and reanalysis data (Sentinel-5P, ERA5, CAMS), with an interactive Streamlit dashboard mapping pollution trends across the country.</p>
+        <div class="entry-tags">
+          <span class="chip">Python</span><span class="chip">Earth Engine</span><span class="chip">Sentinel-5P</span><span class="chip">Streamlit</span>
+        </div>
+        <div class="entry-links">
+          <a class="entry-link" href="https://airvision-2026-esbig4eq22q7shndytr2si.streamlit.app/" target="_blank" rel="noopener">↗ Live</a>
+          <a class="entry-link" href="https://github.com/Ailya-Shah/AirVision-2026" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3P -->
+    <article class="entry tint-rose">
+      <div class="plate">
+        <span class="cap">3p · publication</span>
+        <span class="fallback">assets/3p-blog.png</span>
+        <img src="assets/3p-blog.png" alt="3P personal blog" />
+      </div>
+      <div>
+        <div class="entry-head"><span class="entry-num">iv</span><h3 class="entry-title">3P — Physics · Psyche · Python</h3></div>
+        <p class="entry-desc">My personal publication, built with Jekyll on GitHub Pages — long-form writing across data science, physics, psychology, and philosophy, on a dark editorial theme I designed from scratch. The name this whole portfolio takes its shape from.</p>
+        <div class="entry-tags">
+          <span class="chip">Jekyll</span><span class="chip">Liquid</span><span class="chip">GitHub Pages</span><span class="chip">CSS</span>
+        </div>
+        <div class="entry-links"><a class="entry-link" href="https://ailya-shah.github.io/3P" target="_blank" rel="noopener">↗ Live</a></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- PUBLISHED DATASETS -->
+<section class="section reveal" id="dataset">
+  <div class="sec-head">
+    <span class="sec-num">iii.</span>
+    <span class="sec-title">Published Datasets</span>
+    <span class="sec-rule"></span>
+  </div>
+
+  <article class="entry tint-air">
+    <div class="plate">
+      <span class="cap">kaggle · dataset</span>
+      <span class="fallback">Antarctic Snowcover Dataset</span>
+      <img src="assets/dataset.png" alt="Published Antarctic Snowcover dataset" />
+    </div>
+    <div>
+      <div class="entry-head"><span class="entry-num">i</span><h3 class="entry-title">Antarctic Snowcover Dataset</h3></div>
+      <p class="entry-desc">A published Kaggle dataset focused on Antarctic snowcover analysis and exploration, shared as a public resource for downstream research and modeling.</p>
+      <div class="entry-tags">
+        <span class="chip">Kaggle</span><span class="chip">Remote Sensing</span><span class="chip">Public dataset</span><span class="chip">Antarctica</span>
+      </div>
+      <div class="entry-links"><a class="entry-link" href="https://www.kaggle.com/datasets/ailyazainab/antarctic-snowcover-dataset" target="_blank" rel="noopener">↗ Kaggle dataset</a></div>
+    </div>
+  </article>
+
+  <article class="entry tint-air">
+    <div class="plate">
+      <span class="cap">kaggle · dataset</span>
+      <span class="fallback">Pakistan PM2.5 Air Quality Dataset</span>
+      <img src="assets/dataset2.png" alt="Published Pakistan PM2.5 Air Quality dataset" />
+    </div>
+    <div>
+      <div class="entry-head"><span class="entry-num">ii</span><h3 class="entry-title">Pakistan PM2.5 Air Quality — 15 Cities (2019–2026)</h3></div>
+      <p class="entry-desc">Daily CAMS-derived PM2.5 estimates for 15 major Pakistani cities, spanning 2019 to mid-2026, shared as a public resource for air quality research and modeling.</p>
+      <div class="entry-tags">
+        <span class="chip">Kaggle</span><span class="chip">Air Quality</span><span class="chip">Public dataset</span><span class="chip">Pakistan</span>
+      </div>
+      <div class="entry-links"><a class="entry-link" href="PASTE_YOUR_KAGGLE_URL_HERE" target="_blank" rel="noopener">↗ Kaggle dataset</a></div>
+    </div>
+  </article>
+</section>
+
+<!-- FOCUS -->
+<section class="section reveal" id="focus">
+  <div class="sec-head">
+    <span class="sec-num">iv.</span>
+    <span class="sec-title">Focus — right now</span>
+    <span class="sec-rule"></span>
+  </div>
+
+  <div class="focus-grid">
+    <div class="focus-card fc-ml">
+      <div class="focus-name">Machine Learning</div>
+      <p>The core of most of my work — gradient-boosted models and neural nets for time-series forecasting, credit scorecards, and calibrated risk models. I care about the parts people skip: leakage-aware validation, honest metrics, and models that hold up out of sample.</p>
+      <div class="entry-tags">
+        <span class="chip">XGBoost / LightGBM</span><span class="chip">LSTM</span><span class="chip">SHAP</span><span class="chip">calibration</span>
+      </div>
+    </div>
+    <div class="focus-card fc-rs">
+      <div class="focus-name">Remote Sensing</div>
+      <p>Turning satellite and reanalysis data into something legible — Google Earth Engine, Sentinel-5P, ERA5, and CAMS feeding an air-quality study of 15 Pakistani cities. Large-scale environmental data, cleaned, analysed, and mapped.</p>
+      <div class="entry-tags">
+        <span class="chip">Earth Engine</span><span class="chip">Sentinel-5P</span><span class="chip">ERA5 / CAMS</span><span class="chip">GeoPandas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section reveal" id="skills">
+  <div class="sec-head">
+    <span class="sec-num">v.</span>
+    <span class="sec-title">Skills</span>
+    <span class="sec-rule"></span>
+  </div>
+
+  <div class="skills-panel">
+    <div class="skills-note">Tiered by confidence, with each skill tied back to shipped work.</div>
+
+    <div class="skills-grid">
+      <article class="skill-card fluent">
+        <div class="skill-tier"><b></b> Fluent</div>
+        <p>Core stack I reach for repeatedly and can use without a safety net.</p>
+        <div class="skill-chips">
+          <span class="skill-chip"><i></i>Python</span>
+          <span class="skill-chip"><i></i>SQL</span>
+          <span class="skill-chip"><i></i>C# / .NET 8</span>
+          <span class="skill-chip"><i></i>JavaScript</span>
+          <span class="skill-chip"><i></i>HTML / CSS</span>
+          <span class="skill-chip"><i></i>FastAPI</span>
+          <span class="skill-chip"><i></i>ASP.NET Core</span>
+        </div>
+        <div class="skill-proof">
+          <span class="proof-label">Proved by</span>
+          <span class="proof-tag">Basel-Lite</span>
+          <span class="proof-tag">ExperimentLab</span>
+          <span class="proof-tag">3P</span>
+        </div>
+      </article>
+
+      <article class="skill-card working">
+        <div class="skill-tier"><b></b> Working</div>
+        <p>Tools and methods I use often enough to ship with, and keep refining.</p>
+        <div class="skill-chips">
+          <span class="skill-chip"><i></i>XGBoost</span>
+          <span class="skill-chip"><i></i>LightGBM</span>
+          <span class="skill-chip"><i></i>LSTM / MLP</span>
+          <span class="skill-chip"><i></i>PyTorch</span>
+          <span class="skill-chip"><i></i>Keras</span>
+          <span class="skill-chip"><i></i>Streamlit</span>
+          <span class="skill-chip"><i></i>React + Vite</span>
+          <span class="skill-chip"><i></i>EF Core</span>
+        </div>
+        <div class="skill-proof">
+          <span class="proof-label">Proved by</span>
+          <span class="proof-tag">Bitcoin Trend Prediction</span>
+          <span class="proof-tag">ExperimentLab</span>
+          <span class="proof-tag">AirVision</span>
+        </div>
+      </article>
+
+      <article class="skill-card exploring">
+        <div class="skill-tier"><b></b> Exploring</div>
+        <p>Methods I can already use, but still expect to deepen or formalize further.</p>
+        <div class="skill-chips">
+          <span class="skill-chip"><i></i>GARCH</span>
+          <span class="skill-chip"><i></i>Survival analysis</span>
+          <span class="skill-chip"><i></i>Calibration</span>
+          <span class="skill-chip"><i></i>WoE / IV</span>
+          <span class="skill-chip"><i></i>Leakage-aware splits</span>
+          <span class="skill-chip"><i></i>ADF / KPSS</span>
+          <span class="skill-chip"><i></i>Mann-Kendall</span>
+          <span class="skill-chip"><i></i>Earth Engine</span>
+        </div>
+        <div class="skill-proof">
+          <span class="proof-label">Proved by</span>
+          <span class="proof-tag">Basel-Lite</span>
+          <span class="proof-tag">AirVision</span>
+          <span class="proof-tag">Bitcoin Trend Prediction</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EARLIER -->
+<section class="section reveal" id="earlier">
+  <div class="sec-head">
+    <span class="sec-num">vi.</span>
+    <span class="sec-title">Earlier Work</span>
+    <span class="sec-rule"></span>
+  </div>
+  <div class="earlier-grid">
+    <a class="earlier" href="https://github.com/Ailya-Shah/Therapy-Predictor-using-ML" target="_blank" rel="noopener">
+      <div class="et">Mental Health Therapy Predictor <span class="ar">↗</span></div>
+      <div class="ed">ML classification predicting therapy-related outcomes.</div>
+    </a>
+    <a class="earlier" href="https://github.com/Ailya-Shah/Sleep-Health-Prediction-using-ml" target="_blank" rel="noopener">
+      <div class="et">Sleep Health Classifier <span class="ar">↗</span></div>
+      <div class="ed">Classifying sleep-quality patterns and health indicators.</div>
+    </a>
+    <a class="earlier" href="https://github.com/Ailya-Shah/Polar-Ice-MeltingTracker" target="_blank" rel="noopener">
+      <div class="et">Polar Ice Melting Tracker <span class="ar">↗</span></div>
+      <div class="ed">Environmental analysis of climate trends, with visualization.</div>
+    </a>
+    <a class="earlier" href="https://github.com/Ailya-Shah/Ontology-Engine" target="_blank" rel="noopener">
+      <div class="et">Mythology Learning Application <span class="ar">↗</span></div>
+      <div class="ed">Knowledge-based system structuring mythological concepts.</div>
+    </a>
+    <a class="earlier" href="https://github.com/Ailya-Shah/BB-Archetype-Mapping" target="_blank" rel="noopener">
+      <div class="et">TV Show Character Analysis <span class="ar">↗</span></div>
+      <div class="ed">Mapping character archetypes from structured data.</div>
+    </a>
+    <a class="earlier" href="https://github.com/Ailya-Shah/german-language-app" target="_blank" rel="noopener">
+      <div class="et">German Learning Application <span class="ar">↗</span></div>
+      <div class="ed">First-semester ICT project — interactive language learning.</div>
+    </a>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section reveal" id="certifications">
+  <div class="sec-head">
+    <span class="sec-num">vii.</span>
+    <span class="sec-title">Certifications</span>
+    <span class="sec-rule"></span>
+  </div>
+
+  <div class="badge-grid">
+    <a class="badge-card" href="https://www.credly.com/users/ailya-zainab" target="_blank" rel="noopener">
+      <div class="badge-icon">CR</div>
+      <div class="badge-body">
+        <div class="badge-name">Credly — Verified Badges</div>
+        <div class="badge-desc">All earned credentials, verified and issued through Credly.</div>
+      </div>
+      <span class="badge-arrow">↗</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://github.com/Ailya-Shah" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/ailya-shah-52381a320" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.kaggle.com/ailyazainab" target="_blank" rel="noopener">Kaggle</a>
+    <a href="https://ailya-shah.github.io/3P" target="_blank" rel="noopener">3P</a>
+    <a href="https://substack.com/@ailyaa" target="_blank" rel="noopener">Substack</a>
+    <a href="https://www.credly.com/users/ailya-zainab" target="_blank" rel="noopener">Credly</a>
+  </div>
+  <p class="footer-note">Ailya Shah · Data Science · NUST SEECS, Islamabad</p>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.10 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
